@@ -16,7 +16,7 @@ class CwsController < ApplicationController
 
     # set up some params
     destination_room_id = 137369783
-    body = "Message in #{room_name}: #{body}"
+    body = "Message in #{room_name}: \n #{body}"
 
     # create message
     ChatWork::Message.create room_id: destination_room_id, body: body
