@@ -15,7 +15,7 @@ class CwsController < ApplicationController
     room_name = c.name
 
     # set up some params
-    destination_room_id = 137369783
+    destination_room_id = ENV["DESTINATION_ROOM_ID"]
     body = "Message in #{room_name}:\n#{body}"
 
     # create message
