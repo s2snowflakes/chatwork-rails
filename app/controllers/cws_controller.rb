@@ -19,8 +19,7 @@ class CwsController < ApplicationController
 
     # set up some params
     destination_room_id = ENV["DESTINATION_ROOM_ID"]
-    body = "[To:3056978] Vu Duc Manh (private)\n
-      Message in #{room_name}:\n#{body}"
+    body = "[To:3056978] Vu Duc Manh (private)\nMessage in #{room_name}:\n#{body}"
 
     # change token to bot's token
     ChatWork.api_key = ENV["BOT_TOKEN"]
