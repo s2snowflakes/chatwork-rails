@@ -8,7 +8,8 @@ class CwsController < ApplicationController
   def create
     # set up token
     ChatWork.api_key = ENV["FRAMGIA_ACCOUNT_TOKEN"]
-
+    # framgia_acc_client = ChatWork::Client.new api_key: ENV["FRAMGIA_ACCOUNT_TOKEN"]
+    
     # get room id and body of the message
     room_id = params[:webhook_event][:room_id]
     body = params[:webhook_event][:body]
