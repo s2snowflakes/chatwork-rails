@@ -7,7 +7,7 @@ namespace :tet do
     destination_room_id = 116821963
     # group: 116821963
     # personal: 137385942
-    days = ("2022/04/30".to_date - Date.today).to_i
+    days = ("2021/04/30".to_date - Date.today).to_i
     body = "[toall]
 Còn #{days} ngày nữa là nghỉ 30/4 1/5 (rachoa)"
 
