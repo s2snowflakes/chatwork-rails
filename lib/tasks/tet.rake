@@ -2,6 +2,7 @@ namespace :tet do
   desc "send notification of how many days till Tet holiday"
   task noti: :environment do
     puts "task run"
+    return if Date.today.saturday? || Date.today.sunday?
 
     # set up some params
     destination_room_id = 116821963
