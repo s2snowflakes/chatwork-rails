@@ -10,7 +10,7 @@ namespace :tet do
     # personal: 137385942
     days = ("2022/01/29".to_date - Date.today).to_i
     body = "[toall]
-Còn #{days} ngày nữa là nghỉ tết dương (rachoa)"
+Còn #{days} ngày nữa là nghỉ tết âm (rachoa)"
 
     # change token to bot's token
     ChatWork.api_key = ENV["BOT_ACCOUNT_TOKEN"]
